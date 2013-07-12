@@ -1,0 +1,31 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet id="1" author="jacy">
+		<createTable tableName="block_ips">
+			<column name="id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true"/>
+			</column>
+			<column name="address_start" type="varchar(16)" >
+			    <constraints nullable="false"/>
+			</column>
+			<column name="address_end" type="varchar(16)" >
+			    <constraints nullable="false"/>
+			</column>
+			<column name="number_start" type="bigint">
+			    <constraints nullable="false"/>
+			</column>
+			<column name="number_end" type="bigint">
+			    <constraints nullable="false"/>
+			</column>
+		</createTable>
+		<modifySql dbms="mysql">
+			<append value=" engine innodb" />
+		</modifySql>
+	</changeSet>
+	<changeSet id="2" author="jacy">
+		<addUniqueConstraint tableName="block_ips" columnNames="number_start,number_end" constraintName="uniq_ip_record"/>
+	</changeSet>
+</databaseChangeLog>

@@ -1,0 +1,17 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    
+   <changeSet id="1" author="jacy" context="test">
+   		<insert tableName="block_ips">
+   			<column name="id" value="1"/>
+   			<column name="address_start" value="192.168.1.1"/>
+   			<column name="address_end" value="192.168.1.10"/>
+   			<column name="number_start" value="3232235777"/>
+   			<column name="number_end" value="3232235786"/>
+   		</insert>
+   </changeSet>
+</databaseChangeLog>

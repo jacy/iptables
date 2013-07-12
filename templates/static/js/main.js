@@ -1,0 +1,1 @@
+JC = {};JC.modal = function(id, validator){	 $('#' + id).on('hide', function () {		 if(validator){			 validator.resetForm();		 }     }).css({         width: 'auto',         'margin-left': function () {             return -($(this).width() / 2);         }     });}

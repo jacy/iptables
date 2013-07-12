@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+/ebin
+/doc
+/_test
+/.eunit
+/docs
+.DS_Store
+/TEST-*.xml
+/deps
+*.swp
+=======
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+>>>>>>> 7420e71c2b0308c8397074fe03e8493641cff9c6

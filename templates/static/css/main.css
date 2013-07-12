@@ -1,0 +1,21 @@
+/*validation start */
+span.fieldError {background-color:#FFD7D7;border: 1px solid #F3473D; border-radius: 4px; font-size: 12px; margin-left:5px; margin-bottom: 0; padding:4px; vertical-align: middle; display:inline-block; white-space:pre-wrap;}
+input.fieldError {background-color:#FFD7D7;border: 1px solid #F3473D;}
+/*validation end */
+
+/*cover bootstrap start */
+.form-horizontal .control-label { width: 120px;}
+.form-horizontal .controls { margin-left: 140px;}
+.form-horizontal .control-label-large { width: 180px;}
+.form-horizontal .controls-large { margin-left: 200px;}
+.alert-error { background-color:#FFD7D7;border: 1px solid #F3473D;color: #333333;}
+.alert-success {border: 1px solid #ffbd4c;color:#0d8001;border-color:#4DBF00;background-color:#F0FFE5;}
+select:focus {outline:0;outline-offset:0}
+.radio.inline + .radio.inline, .checkbox.inline + .checkbox.inline {
+    margin-left: 0px;
+}
+/*cover bootstrap end */
+
+/*cover jquery dialog */
+.ui-widget-header, .ui-dialog .ui-dialog-buttonpane button{font-size: 13px}
+.ui-datepicker{z-index: 1003 !important;}

@@ -1,0 +1,22 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet id="1" author="jacy">
+		<createTable tableName="country">
+			<column name="id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true"/>
+			</column>
+			<column name="name" type="varchar(64)" >
+			    <constraints nullable="false" unique="true"/>
+			</column>
+			<column name="code" type="varchar(3)" >
+			    <constraints nullable="false" unique="true"/>
+			</column>
+		</createTable>
+		<modifySql dbms="mysql">
+			<append value=" engine innodb" />
+		</modifySql>
+	</changeSet>
+</databaseChangeLog>

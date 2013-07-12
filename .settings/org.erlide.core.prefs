@@ -1,0 +1,8 @@
+backend_version=R15B
+eclipse.preferences.version=1
+external_includes=
+external_modules=
+include_dirs=deps/mochiweb/include;deps/emysql/include;include
+nukeOutputOnClean=false
+output_dir=ebin
+source_dirs=deps/mochiweb/src;test;deps/emysql/src;src

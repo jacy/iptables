@@ -1,0 +1,9 @@
+%% -*- erlang -*-
+{application, iptables,
+ [{description, "iptables"},
+  {vsn, "0.1"},
+  {modules, []},
+  {registered, []},
+  {mod, {'iptables_app', []}},
+  {env, []},
+  {applications, [kernel, stdlib, crypto]}]}.

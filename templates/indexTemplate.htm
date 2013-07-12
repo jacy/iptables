@@ -1,0 +1,1 @@
+<!DOCTYPE html> <html>	{% include "header.htm" %}	<body>		<div class="container">			<div class="masthead">				{% include "userInfo.htm" %}				<div id="navId" style="display:none;">{% block navId %}nav_block_list{% endblock %}</div>				{% include "menu.htm"%}			</div>			{% block body %}{% endblock %}		</div>	</body></html>
