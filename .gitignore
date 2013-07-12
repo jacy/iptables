@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 /ebin
 /doc
 /_test
@@ -17,10 +16,3 @@
 *.war
 *.ear
 >>>>>>> 7420e71c2b0308c8397074fe03e8493641cff9c6
-=======
-.eunit
-deps
-*.o
-*.beam
-*.plt
->>>>>>> f30b5b65ac7bb16f42a38637fae1b0289daf5572
